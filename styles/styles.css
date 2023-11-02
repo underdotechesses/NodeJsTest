@@ -1,0 +1,83 @@
+.test {
+  color: #5c1a1a;
+}
+.test:hover {
+  color: green;
+}
+.test::after {
+  content: "fjsdlkfjdsl";
+}
+
+.test-1 {
+  color: #5c1a1a;
+}
+
+.test-2 {
+  color: #5c1a1a;
+}
+
+.test-3 {
+  color: #5c1a1a;
+}
+
+.test-4 {
+  color: #5c1a1a;
+}
+
+.test-5 {
+  color: #5c1a1a;
+}
+
+.title {
+  color: red;
+}
+.title:hover {
+  color: black;
+}
+.title::after {
+  content: "fjsdlkfjdsl";
+}
+
+.title-1 {
+  color: red;
+}
+
+.title-2 {
+  color: red;
+}
+
+.title-3 {
+  color: red;
+}
+
+.title-4 {
+  color: red;
+}
+
+.title-5 {
+  color: red;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+.btn-1 {
+  color: red;
+  font-size: 16px;
+  border: 2px solid yellow;
+}
+
+.btn-2 {
+  color: green;
+  font-size: 18px;
+  border: 4px solid yellow;
+}
+
+.btn-3 {
+  color: #b31672;
+  font-size: 20px;
+  border: 6px solid yellow;
+}/*# sourceMappingURL=styles.css.map */

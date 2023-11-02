@@ -1,0 +1,94 @@
+@mixin theme-colors($theme) {
+    @if $theme == "light" {
+        background-color: $light-bg;
+        color: $dark-bg;
+    } @else {
+        background-color: $dark-bg;
+        color: $light-bg;
+    }
+}
+
+$theme: "light";
+$lightn-bg: #fff;
+$dark-bg: #000;
+$base-color: #5c1a1a;
+$second-color: red;
+
+.test {
+    color: $base-color;
+    &:hover {
+        color: green;
+    }
+    &::after {
+        content: "fjsdlkfjdsl";
+    }
+}
+.test-1 {
+    color: $base-color;
+}
+.test-2 {
+    color: $base-color;
+}
+.test-3 {
+    color: $base-color;
+}
+.test-4 {
+    color: $base-color;
+}
+.test-5 {
+    color: $base-color;
+}
+
+.title {
+    color: $second-color;
+    &:hover {
+        color: black;
+    }
+    &::after {
+        content: "fjsdlkfjdsl";
+    }
+}
+
+.title-1 {
+    color: $second-color;
+}
+.title-2 {
+    color: $second-color;
+}
+.title-3 {
+    color: $second-color;
+}
+.title-4 {
+    color: $second-color;
+}
+.title-5 {
+    color: $second-color;
+}
+
+@mixin btn($color, $font-size, $border) {
+    color: $color;
+    font-size: $font-size;
+    border: $border solid yellow;
+}
+
+@mixin flex-column-gray {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.flex-wrapper {
+    @include flex-column-gray;
+}
+
+.btn-1 {
+    @include btn(red, 16px, 2px);
+}
+
+.btn-2 {
+    @include btn(green, 18px, 4px);
+}
+
+.btn-3 {
+    @include btn(#b31672, 20px, 6px);
+}
